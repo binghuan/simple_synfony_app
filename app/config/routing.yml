@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+sendmail:
+    path: /sendmail
+    defaults: { _controller: AppBundle:Default:sendmail }
+    requirements:
+        _method: GET
